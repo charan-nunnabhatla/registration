@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <form id="form">
+      <label class="text fullname">Full Name</label><br />
+      <input type="text" id="fullnameinput" /><br /><br />
+
+      <label class="text rollnumber">Roll Number</label><br />
+      <input type="text" id="rollnumberinput" /><br /><br />
+
+      <label class="text branch" for="branch">Branch</label>
+      <select id="branch">
+        <option>CSE</option>
+        <option>CSE-AIML</option>
+        <option>CSE-CS</option>
+        <option>CSE-DS</option></select
+      ><br /><br />
+
+      <label class="text section">Section</label>
+      <select id="section">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option></select
+      ><br /><br />
+
+      <label class="text email">Email</label><br />
+      <input type="text" id="emailinput" /><br /><br />
+
+      <label class="text phonenumber">Phone Number</label><br />
+      <input type="number" id="phonenumberinput" /><br /><br />
+
+      <label class="text gender">Gender</label><br />
+      <input type="radio" name="radio" id="male" />
+      <label>Male</label>
+      <input type="radio" name="radio" id="female"/>
+      <label>Female</label>
+      <input type="radio" name="radio" id="others"/>
+      <label>Others</label><br /><br />
+
+      <label class="text address">Address</label><br />
+      <input type="text" id="text" /><br /><br />
+
+      <label class="text password">Password</label><br />
+      <input type="password" />
+    </form>
+    <br /><br />
+    <button onclick="submit()" class="button submit" type="submit">Submit</button>
+    <button class="button reset" form="form" type="reset">Reset</button>
+    <button class="button cancle" type="button">Cancel</button>
+  </body>
+</html>
