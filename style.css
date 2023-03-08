@@ -1,16 +1,17 @@
 body{
     text-align: center;
     background-color: #39475c;
+    align-items: center;
 }
 
 
 form{
     /* position: absolute; */
-    text-align: center;
+    /* text-align: center; */
     /* margin: auto; */
     /* width: 50%; */
     /* padding: 10%; */
-    display: inline;
+    /* display: inline; */
 }
 #fullname{
     color: rgb(197, 121, 21);
