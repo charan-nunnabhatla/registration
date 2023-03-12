@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
 
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
   </head>
   <body>
-    <form id="form">
-      <label class="text fullname">Full Name</label><br />
-      <input type="text" id="fullnameinput" class="input"/><br /><br />
+    <div class="main-body">
+      <form autocomplete="off" autocapitalize="true">
 
-      <label class="text rollnumber">Roll Number</label><br />
-      <input type="text" id="rollnumberinput" class="input"/><br /><br />
+        <div class="row">
+          <div class="col-label">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="fname" name="name" placeholder="Your Name" />
+          </div>
+        </div>
 
-      <label class="text branch" for="branch">Branch</label>
-      <select id="branch" class="text input branch">
-        <option>CSE</option>
-        <option>CSE-AIML</option>
-        <option>CSE-CS</option>
-        <option>CSE-DS</option></select
-      ><br /><br />
+        <div class="row">
+          <div class="col-label">
+            <label for="rnumber">Roll Number</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="rnumber"
+              name="rollnumber"
+              placeholder="Roll Number"
+            />
+          </div>
+        </div>
 
-      <label class="text section">Section</label>
-      <select id="section" class="text input section">
-        <option>A</option>
-        <option>B</option>
-        <option>C</option></select
-      ><br /><br />
+        <div class="row">
+          <div class="col-label">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="email" name="email" placeholder="Email" />
+          </div>
+        </div>
 
-      <label class="text email">Email</label><br />
-      <input type="text" id="emailinput" class="input"/><br /><br />
+         <div class="row">
+          <div class="col-label">
+            <label for="phno">Phone</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="phno" name="phno" placeholder="Phone Number" />
+          </div>
+         </div>
 
-      <label class="text phonenumber">Phone Number</label><br />
-      <input type="text" id="phonenumberinput" class="input"/><br /><br />
+         <div class="row">
+          <div class="col-label">
+            <label for="branch">Branch</label>
+          </div>
+          <div class="col-input">
+            <select id="branch">
+              <option>CSE</option>
+              <option>CSE-AIML</option>
+              <option>CSE-DS</option>
+              <option>CSE-CS</option>
+            </select>
+          </div>
+         </div>
 
-      <label class="text gender">Gender</label><br />
-      <input type="radio" name="radio" id="male" />
-      <label class="text male">Male</label>
-      <input type="radio" name="radio" id="female"/>
-      <label class="text female">Female</label>
-      <input type="radio" name="radio" id="others"/>
-      <label class="text others">Others</label><br /><br />
+         <div class="row">
+          <div class="col-label">
+            <label for="section">Section</label>
+          </div>
+          <div class="col-input">
+            <select id="section">
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+         </div>
 
-      <label class="text address">Address</label><br />
-      <input type="text" id="address" class="input"/><br /><br />
+         <div class="row">
+          <div class="col-label">
+            <label for="gender">Gender</label>
+          </div>
+          <div class="col-input">
+            <input type="radio" id="male" name="gender" >
+          </div>
+         </div>
 
-      <label class="text password">Password</label><br />
-      <input type="password" id="passwordinput" class="input"/>
-    </form>
-    <br /><br />
-    <button onclick="submit()" class="buttons submit" type="submit">Submit</button>
-    <button class="buttons reset" form="form" type="reset">Reset</button>
-    <button class="buttons cancle" type="button">Cancel</button>
+          <div class="row">
+          <div class="col-label">
+            <label for="address">Address</label>
+          </div>
+          <div class="col-input">
+            <input type="text" id="address" name="address" placeholder="Address">
+          </div>
+          </div>
+          
+        </div>
+      </form>
+    </div>
   </body>
 </html>
