@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <!-- <script src="index.js"></script> -->
+  </head>
+  <body>
+    <div class="main-body">
+      <div id="header">
+        <header id="registration ">Registration</header>
+      </div>
+      <form id="form" autocomplete="off" action="data.json">
+        <div class="row">
+          <div class="col-label">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="fname"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="rnumber">Roll Number</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="rnumber"
+              name="rollnumber"
+              placeholder="Roll Number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="phno">Phone</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="phno"
+              name="phno"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="branch">Branch</label>
+          </div>
+          <div class="col-input">
+            <select id="branch" required>
+              <option>CSE</option>
+              <option>CSE-AIML</option>
+              <option>CSE-DS</option>
+              <option>CSE-CS</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="section">Section</label>
+          </div>
+          <div class="col-input">
+            <select id="section" required>
+              <option>A</option>
+              <option>B</option>
+              <option>C</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="gender">Gender</label>
+          </div>
+          <div class="col-input">
+            <input type="radio" id="male" name="gender" />
+            <label for="male" id="lmale">Male</label>
+
+            <input type="radio" id="female" name="gender" />
+            <label for="female" id="lfemale">Female</label>
+
+            <input type="radio" id="other" name="gender" />
+            <label for="other" id="lother">Other</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="address">Address</label>
+          </div>
+          <div class="col-input">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Address"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-label">
+            <label for="password">Password</label>
+          </div>
+          <div class="col-input">
+            <input type="password" id="password" required />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="middle"></div>
+
+    <div class="buttons">
+      <div class="reset">
+        <input type="reset" form="form" />
+      </div>
+
+      <div class="cancel">
+        <input type="button" value="Cancel" />
+      </div>
+
+      <div class="submit">
+        <input type="submit" form="form"/>
+      </div>
+    </div>
+  </body>
+</html>
